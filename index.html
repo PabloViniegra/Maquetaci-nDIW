@@ -14,35 +14,106 @@
       crossorigin="anonymous"
     ></script>
     <!--Link a la hoja de estilos CSS-->
+    <link
+      rel="stylesheet"
+      href="assets/OwlCarousel2-2.3.4/dist/assets/owl.carousel.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="assets/OwlCarousel2-2.3.4/dist/assets/owl.theme.default.min.css"
+    />
     <link rel="stylesheet" href="resources/css/style.css" />
+    <!--Scripts  para Owl Carrousel-->
+    <script
+      src="https://code.jquery.com/jquery-3.5.1.slim.js"
+      integrity="sha256-DrT5NfxfbHvMHux31Lkhxg42LY6of8TaYyK50jnxRnM="
+      crossorigin="anonymous"
+    ></script>
+    <script src="assets/OwlCarousel2-2.3.4/src/js/owl.carousel.js"></script>
+    <!--INICIALIZACIÓN JQUERY CON LA FUNCION DE OWL-->
+    <script>
+      $(document).ready(function () {
+        $(".owl-carousel").owlCarousel();
+      });
+    </script>
   </head>
   <body>
     <div class="container">
-      <header>
+      <header class="row">
         <div class="logo col-4">
-          <img src="resources/img/logo.jpg" alt="">
+          <img src="resources/img/logo.jpg" alt="" />
         </div>
-        <div class="contentHeader">
-          <div class="contact">
-            <ul>
-              <li><i class="fas fa-street-view mainIcon"></i><b>Dirección: </b>Calle Nueva 2
-                28921 Alcorcón, España</li>
-                <li><i class="fas fa-phone-alt mainIcon"></i><b>Teléfono: </b>91 643 83 26</li>
-                <li><i class="fas fa-fax mainIcon"></i><b>Fax: </b>91 061 18 5</li>
-                <li><i class="fas fa-envelope-square mainIcon"></i><b>Email: </b>info@juanxxiii.net</li>
-            </ul>
+        <div class="contentHeader col-8 row centerh centerV">
+          <div class="contact row" style="margin-top: 10%; padding: 10px 0">
+            <div class="cont col-6 row centerh">
+              <ul>
+                <li>
+                  <i class="fas fa-street-view mainIcon"></i
+                  ><b>Dirección: </b>Calle Nueva 2 28921 Alcorcón, España
+                </li>
+                <li>
+                  <i class="fas fa-phone-alt mainIcon"></i><b>Teléfono: </b>91
+                  643 83 26
+                </li>
+                <li>
+                  <i class="fas fa-envelope-square mainIcon"></i
+                  ><b>Email: </b>info@juanxxiii.net
+                </li>
+                <li>
+                  <i class="fas fa-fax mainIcon"></i><b>Fax: </b>91 061 18 5
+                </li>
+              </ul>
+            </div>
+            <div class="rrss col-6 centerh">
+              <a href="">
+                <img
+                  src="resources/img/facebook_icon.png"
+                  alt=""
+                  class="iconRRSS"
+                />
+              </a>
+              <a href="">
+                <img
+                  src="resources/img/twitter_icon.png"
+                  alt=""
+                  class="iconRRSS"
+                />
+              </a>
+              <a href="">
+                <img
+                  src="resources/img/whatsapp_icon.png"
+                  alt=""
+                  class="iconRRSS"
+                />
+              </a>
+              <a href="">
+                <img
+                  src="resources/img/instagram_icon.png"
+                  alt=""
+                  class="iconRRSS"
+                />
+              </a>
+            </div>
           </div>
-          <nav>
-
+          <nav class="row between" style="font-size: 24px; padding-top: 15%">
+            <a href="index.html" class="active navSpace">Home</a>
+            <a href="views/courses.html" class="navSpace">Ciclos</a>
+            <a href="views/news.html" class="navSpace">Noticias</a>
+            <a href="views/team.html" class="navSpace">Equipo</a>
           </nav>
         </div>
       </header>
+      <hr class="style-seven" />
       <section>
-
+        <div class="slider">
+          <div class="owl-carousel">
+            <div> <img src="https://fakeimg.pl/1000x500/?text=World&font=lobster"> </div>
+            <div> <img src="https://fakeimg.pl/1000x500/?text=World&font=lobster"> </div>
+            <div> <img src="https://fakeimg.pl/1000x500/?text=World&font=lobster"> </div>
+          </div>
+        </div>
       </section>
-      <footer>
-
-      </footer>
+      <footer></footer>
     </div>
   </body>
 </html>
