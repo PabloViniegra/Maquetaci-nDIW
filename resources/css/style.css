@@ -4,6 +4,7 @@
 :root {
     --main_color: #00467e;
     --secondary_color: ##5c85ae;
+    --background: rgb(217, 217, 217);
 }
 * {
     font-family: 'Piazzolla', sans-serif;
@@ -29,7 +30,7 @@ hr.style-seven {
     border-width: 1px 0 0 0;
     border-radius: 20px;
 }
-
+/* SISTEMA DE ALINEAMIENTO */
 .container {
     width: 80%;
     margin: 0 auto;
@@ -103,6 +104,11 @@ nav a:hover {
     width: 15%;
     padding-top: 9%;
 }
+
+.iconRRSS:hover {
+    background-color: var(--background);
+    border-radius: 10%;
+}
 /*FIN NAVEGACIÓN */
 
 .mainIcon {
@@ -111,6 +117,34 @@ nav a:hover {
 }
 /* FIN HEADER */
 /* SISTEMA DE COLUMNAS */
+
+.containerNews {
+    border: 2px solid var(--background);
+    border-radius: 10px;
+    box-shadow: 3px 3px 0 var(--background);
+}
+
+.btnNews {
+    background-color: var(--secondary_color);
+    border-radius: 15px;
+    font-weight: bold;
+    font-size: 15px;
+    width: 22%;
+    height: 8%;
+    transition-duration: 0.4s;
+    cursor: pointer;
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
+}
+
+.btnNews:hover{
+    background-color: var(--main_color);
+    color: white;
+    box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24), 0 17px 50px 0 rgba(0,0,0,0.19);
+}
+
+.containerFooter {
+    background-color: var(--background);
+}
 .col-1 {
     width: 8.33%;
 }
