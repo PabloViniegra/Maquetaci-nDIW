@@ -25,18 +25,6 @@
     />
     <link rel="stylesheet" href="resources/css/style.css" />
     <!--Scripts  para Owl Carrousel-->
-    <script
-      src="https://code.jquery.com/jquery-3.5.1.slim.js"
-      integrity="sha256-DrT5NfxfbHvMHux31Lkhxg42LY6of8TaYyK50jnxRnM="
-      crossorigin="anonymous"
-    ></script>
-    <script src="assets/OwlCarousel2-2.3.4/src/js/owl.carousel.js"></script>
-    <!--INICIALIZACIÓN JQUERY CON LA FUNCION DE OWL-->
-    <script>
-      $(document).ready(function () {
-        $(".owl-carousel").owlCarousel();
-      });
-    </script>
   </head>
   <body>
     <div class="container">
@@ -45,7 +33,7 @@
           <img src="resources/img/logo.jpg" alt="" />
         </div>
         <div class="contentHeader col-8 row centerh centerV">
-          <div class="contact row" style="margin-top: 10%; padding: 10px 0">
+          <div class="contact row" style="margin-top: 10%; padding: 10px 0;">
             <div class="cont col-6 row centerh">
               <ul>
                 <li>
@@ -96,7 +84,7 @@
               </a>
             </div>
           </div>
-          <nav class="row between" style="font-size: 24px; padding-top: 15%">
+          <nav class="row between" style="font-size: 24px; padding-top: 15%;">
             <a href="index.html" class="active navSpace">Home</a>
             <a href="views/courses.html" class="navSpace">Ciclos</a>
             <a href="views/news.html" class="navSpace">Noticias</a>
@@ -107,15 +95,63 @@
       <hr class="style-seven" />
       <section>
         <div class="slider">
-          <div class="owl-carousel">
-            <div><img src="resources/img/slide1.jpg" /></div>
-            <div><img src="resources/img/slide2.png" /></div>
-            <div><img src="resources/img/slide3.jpg" /></div>
+          <div class="carousel">
+            <ul class="slides">
+              <input type="radio" name="radio-buttons" id="img-1" checked />
+              <li class="slide-container">
+                <div class="slide-image">
+                  <img src="https://upload.wikimedia.org/wikipedia/commons/9/9e/Timisoara_-_Regional_Business_Centre.jpg">
+                </div>
+                <div class="carousel-controls">
+                  <label for="img-3" class="prev-slide">
+                    <span>&lsaquo;</span>
+                  </label>
+                  <label for="img-2" class="next-slide">
+                    <span>&rsaquo;</span>
+                  </label>
+                </div>
+              </li>
+              <input type="radio" name="radio-buttons" id="img-2" />
+              <li class="slide-container">
+                <div class="slide-image">
+                  <img src="https://content.r9cdn.net/rimg/dimg/db/02/06b291e8-city-14912-171317ad83a.jpg?width=1750&height=1000&xhint=3040&yhint=2553&crop=true">
+                </div>
+                <div class="carousel-controls">
+                  <label for="img-1" class="prev-slide">
+                    <span>&lsaquo;</span>
+                  </label>
+                  <label for="img-3" class="next-slide">
+                    <span>&rsaquo;</span>
+                  </label>
+                </div>
+              </li>
+              <input type="radio" name="radio-buttons" id="img-3" />
+              <li class="slide-container">
+                <div class="slide-image">
+                  <img src="https://speakzeasy.files.wordpress.com/2015/05/twa_blogpic_timisoara-4415.jpg">
+                </div>
+                <div class="carousel-controls">
+                  <label for="img-2" class="prev-slide">
+                    <span>&lsaquo;</span>
+                  </label>
+                  <label for="img-1" class="next-slide">
+                    <span>&rsaquo;</span>
+                  </label>
+                </div>
+              </li>
+              <div class="carousel-dots">
+                <label for="img-1" class="carousel-dot" id="img-dot-1"></label>
+                <label for="img-2" class="carousel-dot" id="img-dot-2"></label>
+                <label for="img-3" class="carousel-dot" id="img-dot-3"></label>
+              </div>
+            </ul>
           </div>
         </div>
+      </section>
+      <section>
         <hr />
         <div class="containerNews row centerV">
-          <h1 style="padding-top: 3%; font-size: 30px; padding-bottom: 3%">
+          <h1 style="padding-top: 3%; font-size: 30px; padding-bottom: 3%;">
             NOTICIAS
           </h1>
           <div class="news col-12 row around">
@@ -123,10 +159,10 @@
               <img src="resources/img/new1.jpg" alt="Noticia" />
             </div>
             <div class="textNew col-6 row centerV">
-              <h3 style="text-decoration: underline">
+              <h3 style="text-decoration: underline;">
                 Lorem ipsum dolor sit amet.
               </h3>
-              <p style="text-align: center">
+              <p style="text-align: center;">
                 Lorem ipsum dolor sit amet consectetur adipisicing elit. Enim
                 amet maxime quos tempore ullam laudantium. Amet alias labore,
                 porro sit debitis repudiandae libero natus ullam quod odio
@@ -141,13 +177,15 @@
               <input type="button" value="Ir a la noticia" class="btnNews" />
             </div>
           </div>
-          
           <div class="news col-12 row around">
-            <div class="textNew col-6 row centerV" style="margin-top: 3%;padding-right: 30px;">
+            <div
+              class="textNew col-6 row centerV"
+              style="margin-top: 3%; padding-right: 30px;"
+            >
               <h3 style="text-decoration: underline;">
                 Lorem ipsum dolor sit amet.
               </h3>
-              <p style="text-align: center">
+              <p style="text-align: center;">
                 Lorem ipsum dolor sit amet consectetur adipisicing elit. Enim
                 amet maxime quos tempore ullam laudantium. Amet alias labore,
                 porro sit debitis repudiandae libero natus ullam quod odio
@@ -162,24 +200,68 @@
               <input type="button" value="Ir a la noticia" class="btnNews" />
             </div>
             <div class="imgNew col-6">
-              <img src="resources/img/new2.jpg" alt="Noticia" style="border-radius: 10px;"/>
+              <img
+                src="resources/img/new2.jpg"
+                alt="Noticia"
+                style="border-radius: 10px;"
+              />
             </div>
           </div>
-          <input type="button" value="Ver más" class="btnNews" style="margin-top: 4%;">
+          <input
+            type="button"
+            value="Ver más"
+            class="btnNews"
+            style="margin-top: 4%; margin-bottom: 2%;"
+          />
         </div>
       </section>
+    </section>
       <footer>
-        <div class="containerFooter row around centerh" style="border-radius: 10px;">
+        <div
+          class="containerFooter row around centerh"
+          style="border-radius: 10px;"
+        >
           <div class="logo col-3">
-            <img src="resources/img/logo.jpg" alt="Logo JuanXXIII" style="border-radius: 50%;">
+            <img
+              src="resources/img/logo.jpg"
+              alt="Logo JuanXXIII"
+              style="border-radius: 50%;"
+            />
           </div>
           <div class="maps col-3">
-            
+            <iframe
+              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3040.758230556142!2d-3.82990468421804!3d40.347708979373095!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xd418eca7f406589%3A0x7199fb37c5505389!2sCentro%20de%20Formaci%C3%B3n%20Profesional%20Juan%20XXIII!5e0!3m2!1ses!2ses!4v1602611958777!5m2!1ses!2ses"
+              frameborder="0"
+              style="border: 0;"
+              allowfullscreen="true"
+              aria-hidden="false"
+              tabindex="0"
+              height="100%"
+            ></iframe>
           </div>
-          <div class="formInfo col-3"></div>
+          <div class="formInfo col-3 row centerV">
+            <form>
+              <p>Nombre:</p>
+              <input type="text" id="input_nombre" placeholder="Nombre" />
+              <p>Apellidos:</p>
+              <input type="text" id="input_apellido" placeholder="Apellidos" />
+              <p>Asunto:</p>
+              <textarea
+                name="asunto"
+                id="input_asunto"
+                cols="30"
+                rows="10"
+                placeholder="Escribe tu asunto"
+              ></textarea>
+              <input type="button" value="Enviar" class="btnNews" />
+            </form>
+          </div>
           <div class="suggestions col-3"></div>
         </div>
       </footer>
     </div>
+  
+  
+
   </body>
 </html>
