@@ -94,7 +94,6 @@ nav a {
 }
 
 nav a:hover {
-    background: var(--secondary_color);
     border-radius: 20px;
     font-size: 26px;
     transition: 0.5s;
@@ -144,6 +143,31 @@ nav a:hover {
 
 .containerFooter {
     background-color: var(--background);
+}
+
+
+.containerCourses {
+    margin-bottom: 4%;
+    box-shadow: 3px 3px 0 var(--background);
+    border-radius: 10px;
+}
+
+.course {
+    background-color: #d1eced;
+    border: 1px solid black;
+    border-radius: 10px;
+    padding: 2% 3%;
+    font-size: 16px;
+}
+
+.course h3 {
+    padding-bottom: 5%;
+}
+
+.course:hover {
+    z-index: 1;
+    transform: translateY(-20px);
+    transition: 0,5s;
 }
 .col-1 {
     width: 8.33%;
@@ -298,7 +322,7 @@ ul.slides input {
     width: 30px;
     height: 30px;
     border-radius: 50%;
-    background-color: #fff;
+    background-color: var(--main_color);
     opacity: 0.5;
     margin: 10px;
 }

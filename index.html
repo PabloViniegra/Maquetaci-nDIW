@@ -100,7 +100,7 @@
               <input type="radio" name="radio-buttons" id="img-1" checked />
               <li class="slide-container">
                 <div class="slide-image">
-                  <img src="https://upload.wikimedia.org/wikipedia/commons/9/9e/Timisoara_-_Regional_Business_Centre.jpg">
+                  <img src="resources/img/slide1.jpg">
                 </div>
                 <div class="carousel-controls">
                   <label for="img-3" class="prev-slide">
@@ -114,7 +114,7 @@
               <input type="radio" name="radio-buttons" id="img-2" />
               <li class="slide-container">
                 <div class="slide-image">
-                  <img src="https://content.r9cdn.net/rimg/dimg/db/02/06b291e8-city-14912-171317ad83a.jpg?width=1750&height=1000&xhint=3040&yhint=2553&crop=true">
+                  <img src="resources/img/slide2.png">
                 </div>
                 <div class="carousel-controls">
                   <label for="img-1" class="prev-slide">
@@ -128,7 +128,7 @@
               <input type="radio" name="radio-buttons" id="img-3" />
               <li class="slide-container">
                 <div class="slide-image">
-                  <img src="https://speakzeasy.files.wordpress.com/2015/05/twa_blogpic_timisoara-4415.jpg">
+                  <img src="resources/img/slide3.jpg">
                 </div>
                 <div class="carousel-controls">
                   <label for="img-2" class="prev-slide">
@@ -216,11 +216,52 @@
         </div>
       </section>
     </section>
-      <footer>
-        <div
-          class="containerFooter row around centerh"
-          style="border-radius: 10px;"
-        >
+    <br>
+    <hr class="style-seven">
+    <section class="containerCourses row around">
+        <div class="course col-3">
+          <h3><i class="fas fa-graduation-cap"></i>Ciclos de Grado Medio</h3>
+          <ul>
+            <li>Gestión Administrativa</li>
+            <li>Instalaciones Eléctricas y Automáticas</li>
+            <li>Sistemas Microinformáticos en Red (SMR)</li>
+            <li>Actividades Comerciales</li>
+          </ul>
+        </div>
+        <div class="course col-3">
+          <h3><i class="fas fa-user-graduate"></i>Ciclos de Grado Superior</h3>
+          <ul>
+            <li>Administración y Finanzas</li>
+            <li>Administración de Sistemas Informáticos en Red (ASIR)</li>
+            <li>Desarrollo de Aplicaciones Multiplataforma (DAM)</li>
+            <li>Desarrollo de Aplicaciones Web (DAW)</li>
+            <li>Marketing y Publicidad</li>
+            <li>Educación Infantil</li>
+          </ul>
+        </div>
+        <div class="course col-3">
+          <h3><i class="fas fa-school"></i>Formación Profesional Básica</h3>
+          <ul>
+            <li>Electricidad y electrónica</li>
+            <li>Informática y Comunicaciones</li>
+            <li>Servicios Administrativos</li>
+          </ul>
+        </div>
+        <div class="course col-3">
+          <h3><i class="fas fa-stamp"></i>Certificaciones</h3>
+          <ul>
+            <li>Certificaciones <b>sage</b></li>
+            <li><b>Cisco</b> Networking Academy</li>
+            <li><b>Linux</b> Professional Institute</li>
+            <li><b>Microsoft</b> IT Academy</li>
+            <li><b>Oracle</b> Student Campus</li>
+            <li><b>Microsoft</b> Office Specialist</li>
+            <li>Certificados de Profesionalidad <b>SEPE</b></li>
+          </ul>
+        </div>
+    </section>
+      <footer class="containerFooter row around centerh"
+      style="border-radius: 10px;">
           <div class="logo col-3">
             <img
               src="resources/img/logo.jpg"
@@ -229,25 +270,17 @@
             />
           </div>
           <div class="maps col-3">
-            <iframe
-              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3040.758230556142!2d-3.82990468421804!3d40.347708979373095!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xd418eca7f406589%3A0x7199fb37c5505389!2sCentro%20de%20Formaci%C3%B3n%20Profesional%20Juan%20XXIII!5e0!3m2!1ses!2ses!4v1602611958777!5m2!1ses!2ses"
-              frameborder="0"
-              style="border: 0;"
-              allowfullscreen="true"
-              aria-hidden="false"
-              tabindex="0"
-              height="100%"
-            ></iframe>
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3040.7580462365813!2d-3.829904684295264!3d40.34771306775742!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xd418eca7f406589%3A0x7199fb37c5505389!2sCentro%20de%20Formaci%C3%B3n%20Profesional%20Juan%20XXIII!5e0!3m2!1ses!2ses!4v1602697999740!5m2!1ses!2ses" width="400" height="350" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
           </div>
-          <div class="formInfo col-3 row centerV">
+          <div class="formInfo col-3 row centerV centerh">
             <form>
-              <p>Nombre:</p>
+              <p><b>Nombre:</b></p>
               <input type="text" id="input_nombre" placeholder="Nombre" />
-              <p>Apellidos:</p>
+              <p><b>Apellidos:</b></p>
               <input type="text" id="input_apellido" placeholder="Apellidos" />
-              <p>Asunto:</p>
+              <p><b>Asunto:</b></p>
               <textarea
-                name="asunto"
+                name="issue"
                 id="input_asunto"
                 cols="30"
                 rows="10"
@@ -256,8 +289,11 @@
               <input type="button" value="Enviar" class="btnNews" />
             </form>
           </div>
-          <div class="suggestions col-3"></div>
-        </div>
+          <div class="suggestions col-3 row centerh centerV">
+            <h4>Buzón de Sugerencias</h4>
+            <textarea name="suggestions" id="inputSuggestion" cols="40" rows="12" placeholder="Sugerencias"></textarea>
+            <input type="button" value="Sugerir" class="btnNews" style="margin-top: 2%;">
+          </div>
       </footer>
     </div>
   
