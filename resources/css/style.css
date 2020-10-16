@@ -405,3 +405,15 @@ input:checked + .slide-container .nav label { display: block; }
 }
 
 /* FIN CONTAINER NEWS.HTML*/
+/* INICIO TEAM.HTML*/
+.containerTeam {
+    margin-top: 0.5em;
+    border: 8px solid black;
+}
+.teacher {
+    
+}
+
+.rowTeacher {
+    margin-top: 1%;
+}
