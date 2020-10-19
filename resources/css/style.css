@@ -31,6 +31,11 @@ hr.style-seven {
     border-width: 1px 0 0 0;
     border-radius: 20px;
 }
+
+
+iframe {
+    width: 100%;
+}
 /* SISTEMA DE ALINEAMIENTO */
 .container {
     width: 80%;
@@ -67,6 +72,7 @@ hr.style-seven {
 .between {
     justify-content: space-between;
 }
+
 /* HEADER */
 [class^="fas"]{
     padding-right: 10px;
@@ -135,13 +141,31 @@ nav a:hover {
     box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
 }
 
+.btnNewsAlternative {
+    background-color: var(--secondary_color);
+    border-radius: 15px;
+    font-weight: bold;
+    font-size: 16px;
+    max-height: 10%;
+    padding: 0 1%;
+    transition-duration: 0.4s;
+    cursor: pointer;
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
+}
+
+.btnNewsAlternative:hover {
+    background-color: var(--main_color);
+    color: white;
+    box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24), 0 17px 50px 0 rgba(0,0,0,0.19);
+}
+
 .btnOther {
     background-color: var(--secondary_color);
     border-radius: 10px;
     font-weight: bold;
-    font-size: 16px;
+    font-size: 15px;
+    padding: 0.4em;
     transition-duration: 0.4s;
-    padding: 0.5em;
     cursor: pointer;
     box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
 }

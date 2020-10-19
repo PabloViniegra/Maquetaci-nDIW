@@ -27,7 +27,9 @@
     <!--Scripts  para Owl Carrousel-->
   </head>
   <body>
+    <!--CONTENEDOR PRINCIPAL-->
     <div class="container">
+      <!--ENCABEZADO (INCLUYE NAVEGACIÓN)-->
       <header class="row">
         <div class="logo col-4">
           <img src="resources/img/logo.jpg" alt="" />
@@ -93,6 +95,7 @@
         </div>
       </header>
       <hr class="style-seven" />
+      <!--CÓDIGO DE CARRUSEL-->
       <section>
         <div class="slider">
           <div class="carousel">
@@ -150,6 +153,7 @@
       </section>
       <section>
         <hr />
+        <!--SECCIÓN DE NOTICIAS-->
         <div class="containerNews row centerV">
           <h1 style="padding-top: 3%; font-size: 30px; padding-bottom: 3%;">
             NOTICIAS
@@ -174,7 +178,7 @@
                 exercitationem eligendi nobis architecto? Corporis officia quod
                 vero tenetur?
               </p>
-              <input type="button" value="Ir a la noticia" class="btnNews" />
+              <input type="button" value="Ir a la noticia" class="btnNewsAlternative" />
             </div>
           </div>
           <div class="news col-12 row around">
@@ -197,7 +201,7 @@
                 exercitationem eligendi nobis architecto? Corporis officia quod
                 vero tenetur?
               </p>
-              <input type="button" value="Ir a la noticia" class="btnNews" />
+              <input type="button" value="Ir a la noticia" class="btnNewsAlternative" />
             </div>
             <div class="imgNew col-6">
               <img
@@ -217,6 +221,7 @@
       </section>
     </section>
     <br>
+    <!--SECCIÓN DE CURSOS Y CICLOS-->
     <hr class="style-seven">
     <section class="containerCourses row around">
         <div class="course col-3">
@@ -270,7 +275,7 @@
             />
           </div>
           <div class="maps col-3">
-            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3040.7580462365813!2d-3.829904684295264!3d40.34771306775742!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xd418eca7f406589%3A0x7199fb37c5505389!2sCentro%20de%20Formaci%C3%B3n%20Profesional%20Juan%20XXIII!5e0!3m2!1ses!2ses!4v1602697999740!5m2!1ses!2ses" width="350" height="350" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3040.7580462365813!2d-3.829904684295264!3d40.34771306775742!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xd418eca7f406589%3A0x7199fb37c5505389!2sCentro%20de%20Formaci%C3%B3n%20Profesional%20Juan%20XXIII!5e0!3m2!1ses!2ses!4v1602697999740!5m2!1ses!2ses"frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
           </div>
           <div class="formInfo col-3 row centerV centerh">
             <form>
@@ -286,18 +291,17 @@
                 rows="10"
                 placeholder="Escribe tu asunto"
               ></textarea>
-              <input type="button" value="Enviar" class="btnOther" />
+              <input type="button" value="Enviar" class="btnOther"/>
             </form>
           </div>
-          <div class="suggestions col-3 row centerh centerV">
-            <h4>Buzón de Sugerencias</h4>
-            <textarea name="suggestions" id="inputSuggestion" cols="30" rows="12" placeholder="Sugerencias"></textarea>
-            <input type="button" value="Sugerir" class="btnOther" style="margin-top: 2%;">
+          <div class="suggestions col-3 row centerV centerh">
+            <div>
+              <h4 id="suggest_postbox">Buzón de Sugerencias</h4>
+              <textarea name="suggestions" id="inputSuggestion" cols="30" rows="15" placeholder="Sugerencias"></textarea>
+              <input type="button" value="Sugerir" class="btnOther" style="margin-top: 2%;">
+            </div>
           </div>
       </footer>
     </div>
-  
-  
-
   </body>
 </html>
