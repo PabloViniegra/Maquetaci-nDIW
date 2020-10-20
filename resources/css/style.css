@@ -19,6 +19,10 @@ a {
     color: var(--main_color);
 }
 
+li {
+    list-style: none;
+}
+
 img {
     max-width: 100%;
 }
@@ -210,6 +214,7 @@ nav a:hover {
     transform: translateY(-20px);
     transition: 0,5s;
 }
+/* SISTEMA DE COLUMNAS */
 .col-1 {
     width: 8.33%;
 }
@@ -257,8 +262,8 @@ nav a:hover {
 .col-12 {
     width: 100%;
 }
-/* FIN SISTEMA DE COLUMNAS */
 
+/* FIN SISTEMA DE COLUMNAS*/
 /* CARRUSEL*/
 .carousel {
     margin-left: 0;
@@ -268,7 +273,7 @@ nav a:hover {
 ul.slides {
     display: block;
     position: relative;
-    height: 600px;
+    height: 20em;
     margin: 0;
     padding: 0;
     overflow: hidden;
@@ -387,6 +392,9 @@ input#img-6:checked ~ .carousel-dots label#img-dot-6 {
 	opacity: 1;
 }
 
+/*SISTEMA DE COLUMNAS */
+
+
 
 input:checked + .slide-container .nav label { display: block; }
 
@@ -428,6 +436,8 @@ input:checked + .slide-container .nav label { display: block; }
     font-weight: bold;
 }
 
+
+
 /* FIN CONTAINER NEWS.HTML*/
 /* INICIO TEAM.HTML*/
 .containerTeam {
@@ -440,4 +450,80 @@ input:checked + .slide-container .nav label { display: block; }
 
 .rowTeacher {
     margin-top: 1%;
+}
+/* FIN TEAM.HTML*/
+/* INICIO COURSES.HTML*/
+.containerCourse {
+    border: 6px solid white;
+    background-color: #3796b5;
+    padding: 5px 5px;
+    border-radius: 20px;
+}
+
+.containerCourse > div {
+    background-color: white;
+    padding: 10px 10px;
+    border: 2px solid var(--main_color);
+    border-radius: 20px;
+
+}
+/* FIN COURSES.HTML*/
+
+@media (max-width: 1200px) {
+
+}
+
+@media (max-width: 992px) {
+
+    
+}
+
+
+@media (max-width: 768px) {
+    col-3 {
+        width: 50%;
+    }
+
+    col-4 {
+        width: 100%;
+    }
+
+    ul.slides {
+        height: 15em;
+    }
+    .carousel-dots .carousel-dot {
+        height: 20px;
+        width: 20px;
+    }
+
+    .container {
+        width: 90%;
+    }
+}
+
+
+@media (max-width: 576px){
+    
+    .colHorizontal {
+        flex-direction: column;
+    }
+
+    [class^="col"] {
+        width: 100%;
+        padding: 15px;
+    }
+
+    ul.slides {
+        height: 10em;
+    }
+
+    .carousel-dots .carousel-dot {
+        height: 10px;
+        width: 10px;
+    }
+
+    .container {
+        width: 100%;
+    }
+
 }

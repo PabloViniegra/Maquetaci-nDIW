@@ -15,3 +15,8 @@
 .ionide
 
 # End of https://www.toptal.com/developers/gitignore/api/visualstudiocode
+
+### min-weight --> 576px
+### 768px
+### 992px
+### 1200px
