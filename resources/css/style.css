@@ -273,7 +273,7 @@ nav a:hover {
 ul.slides {
     display: block;
     position: relative;
-    height: 20em;
+    height: 35em;
     margin: 0;
     padding: 0;
     overflow: hidden;
@@ -436,6 +436,10 @@ input:checked + .slide-container .nav label { display: block; }
     font-weight: bold;
 }
 
+.myNav {
+    font-size: 24px; 
+    padding-top: 15%;
+}
 
 
 /* FIN CONTAINER NEWS.HTML*/
@@ -453,32 +457,13 @@ input:checked + .slide-container .nav label { display: block; }
 }
 /* FIN TEAM.HTML*/
 /* INICIO COURSES.HTML*/
-.containerCourse {
-    border: 6px solid white;
-    background-color: #3796b5;
-    padding: 5px 5px;
-    border-radius: 20px;
+.course a li {
+    text-decoration: none;
+    color: #000;
 }
 
-.containerCourse > div {
-    background-color: white;
-    padding: 10px 10px;
-    border-radius: 20px;
-    height: 100%;
-
-}
-
-.containerCourse:hover {
-    background-color: var(--main_color);
-    border-radius: 15px;
-}
-
-.containerCourse ul {
-    list-style-type: symbols();
-}
-
-.containerCourse  ul > li {
-    margin: 3% 0;
+.course a li:hover {
+    font-weight: bold;
 }
 
 .statistics {
@@ -492,11 +477,15 @@ input:checked + .slide-container .nav label { display: block; }
 /* FIN COURSES.HTML*/
 
 @media (max-width: 1200px) {
-
+    ul.slides {
+        height: 35em;
+    }
 }
 
 @media (max-width: 992px) {
-
+    ul.slides {
+        height: 30em;
+    }
     
 }
 
@@ -509,9 +498,22 @@ input:checked + .slide-container .nav label { display: block; }
     col-4 {
         width: 100%;
     }
+    header .col-4, header .col-8 {
+        width: 100%;
+
+    }
+
+    header {
+        justify-content: center;
+    }
+
+    header .logo {
+        width: 30%;
+
+    }
 
     ul.slides {
-        height: 15em;
+        height: 25em;
     }
     .carousel-dots .carousel-dot {
         height: 20px;
@@ -548,4 +550,38 @@ input:checked + .slide-container .nav label { display: block; }
         width: 100%;
     }
 
+    .myNav {
+        padding-top: 5%;
+        padding-bottom: 2%;
+    }
+
+    .contact {
+        justify-content: center;
+    }
+
+    .contact .cont {
+        width: 100%;
+    }
+
+    .contact .rrss {
+        width: 100%;
+    }
+     .news .col-6 {
+         width: 100%;
+     }
+     .containerCourses .col-3 {
+         width: 100%;
+     }
+
+     .footer .logo {
+         width: 100%;
+     }
+
+     .footer .maps {
+         width: 100%;
+     }
+
+     .footer .formInfo {
+         width: 100%;
+     }
 }
