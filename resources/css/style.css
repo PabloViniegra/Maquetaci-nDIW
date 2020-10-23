@@ -463,9 +463,31 @@ input:checked + .slide-container .nav label { display: block; }
 .containerCourse > div {
     background-color: white;
     padding: 10px 10px;
-    border: 2px solid var(--main_color);
     border-radius: 20px;
+    height: 100%;
 
+}
+
+.containerCourse:hover {
+    background-color: var(--main_color);
+    border-radius: 15px;
+}
+
+.containerCourse ul {
+    list-style-type: symbols();
+}
+
+.containerCourse  ul > li {
+    margin: 3% 0;
+}
+
+.statistics {
+    padding: 0 4%;
+    border-radius: 10px;
+}
+
+.statistics:hover {
+    border: 3px solid black;
 }
 /* FIN COURSES.HTML*/
 
