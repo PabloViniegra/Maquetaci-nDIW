@@ -523,6 +523,10 @@ input:checked + .slide-container .nav label { display: block; }
     .container {
         width: 90%;
     }
+
+    .teacher {
+        width: 50%;
+    }
 }
 
 
@@ -573,15 +577,35 @@ input:checked + .slide-container .nav label { display: block; }
          width: 100%;
      }
 
-     .footer .logo {
+     .footer .logo .col-3{
          width: 100%;
      }
 
-     .footer .maps {
+     .footer .maps .col-3{
          width: 100%;
      }
 
-     .footer .formInfo {
+     .footer .formInfo .col-3 {
+         width: 100%;
+     }
+
+     .footer .suggestions .col-3 {
+        width: 100%;
+     }
+
+     .around {
+         justify-content: center;
+     }
+
+     .statistics {
+         width: 100%;
+     }
+
+     .new {
+         width: 100%;
+     }
+
+     .teacher {
          width: 100%;
      }
 }
