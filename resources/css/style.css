@@ -52,6 +52,10 @@ iframe {
     flex-direction: row;
 }
 
+.between {
+    justify-content: space-between;
+}
+
 .centerh {
     align-items: center;
 }
@@ -487,6 +491,7 @@ input:checked + .slide-container .nav label { display: block; }
         height: 30em;
     }
     
+    
 }
 
 
@@ -525,6 +530,10 @@ input:checked + .slide-container .nav label { display: block; }
     }
 
     .teacher {
+        width: 50%;
+    }
+
+    .containerFooter .col-3 {
         width: 50%;
     }
 }
@@ -577,26 +586,11 @@ input:checked + .slide-container .nav label { display: block; }
          width: 100%;
      }
 
-     .footer .logo .col-3{
+     
+     .containerFooter .col-3 {
          width: 100%;
      }
-
-     .footer .maps .col-3{
-         width: 100%;
-     }
-
-     .footer .formInfo .col-3 {
-         width: 100%;
-     }
-
-     .footer .suggestions .col-3 {
-        width: 100%;
-     }
-
-     .around {
-         justify-content: center;
-     }
-
+    
      .statistics {
          width: 100%;
      }
